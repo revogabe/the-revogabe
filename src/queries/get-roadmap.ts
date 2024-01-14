@@ -1,0 +1,13 @@
+import { Roadmap } from '@/app/api/roadmap/route'
+
+export async function getRoadmap() {
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/roadmap`, {
+    method: 'GET',
+    cache: 'no-cache',
+    next: {
+      tags: ['get-roadmap'],
+    },
+  })
+  const data = await response.json()
+  return data as Roadmap[]
+}

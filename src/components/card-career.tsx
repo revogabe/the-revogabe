@@ -10,7 +10,7 @@ export const CardCareer = (career: Career) => {
   return (
     <Link
       key={career.id}
-      className="w-full max-w-[440px] hover:no-underline"
+      className="w-full hover:no-underline"
       href={career.linkedin_url}
       target="_blank"
     >

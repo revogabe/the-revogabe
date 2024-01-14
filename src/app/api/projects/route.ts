@@ -11,28 +11,28 @@ export type Project = {
 const projects = [
   {
     id: 'translify',
-    name: 'Translify GO',
+    name: 'Translify AI',
     url: 'https://github.com/',
     icon: 'https://github.com/favicon.ico',
     og_image: 'https://github.com/og.png',
   },
   {
     id: 'translify',
-    name: 'Translify GO',
+    name: 'Comaqui',
     url: 'https://github.com/',
     icon: 'https://github.com/favicon.ico',
     og_image: 'https://github.com/og.png',
   },
   {
     id: 'translify',
-    name: 'Translify GO',
+    name: 'Jobsdev GO',
     url: 'https://github.com/',
     icon: 'https://github.com/favicon.ico',
     og_image: 'https://github.com/og.png',
   },
   {
     id: 'translify',
-    name: 'Translify GO',
+    name: 'Comakit',
     url: 'https://github.com/',
     icon: 'https://github.com/favicon.ico',
     og_image: 'https://github.com/og.png',

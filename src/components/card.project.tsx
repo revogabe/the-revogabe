@@ -8,7 +8,7 @@ import { SiOpenai } from 'react-icons/si'
 
 export const CardProject = (project: Project) => {
   return (
-    <a href={project.url} target="_blank" className="hover:no-underline">
+    <a href={project.url} target="_blank" className="w-[400px] hover:no-underline">
       <Card className="start-center flex h-full gap-5 p-4 duration-100 ease-in-out hover:opacity-75 max-lg:w-full">
         <div className="start-center flex w-full flex-col gap-2">
           <Avatar className="h-11 w-11 rounded-xl border bg-white">
