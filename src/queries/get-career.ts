@@ -3,7 +3,7 @@ import { Career } from '@/app/api/careers/route'
 export async function getCareers() {
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/careers`, {
     method: 'GET',
-    cache: 'no-cache',
+    cache: 'force-cache',
     next: {
       tags: ['get-careers'],
     },

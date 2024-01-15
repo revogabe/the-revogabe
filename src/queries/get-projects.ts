@@ -3,7 +3,7 @@ import { Project } from '@/app/api/projects/route'
 export async function getProjects() {
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/projects`, {
     method: 'GET',
-    cache: 'no-cache',
+    cache: 'force-cache',
     next: {
       tags: ['get-projects'],
     },

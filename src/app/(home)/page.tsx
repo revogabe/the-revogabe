@@ -187,7 +187,7 @@ export default async function Home() {
 
                 <div className="w-full">
                   <iframe
-                    src="https://player.twitch.tv/?channel=revogabe&parent=revogabe-vercel.com&muted=true"
+                    src="https://player.twitch.tv/?channel=revogabe&parent=revogabe.vercel.app&muted=true"
                     className="h-[240px] w-full rounded-lg"
                     allowFullScreen
                     allow="mute;"
@@ -442,7 +442,7 @@ export default async function Home() {
 
               <div className="w-full">
                 <iframe
-                  src="https://player.twitch.tv/?channel=revogabe&parent=revogabe-vercel.com&muted=true"
+                  src="https://player.twitch.tv/?channel=revogabe&parent=revogabe.vercel.app&muted=true"
                   className="h-[240px] w-full rounded-lg"
                   allowFullScreen
                   allow="mute;"
