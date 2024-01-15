@@ -1,7 +1,7 @@
 import { Career } from '@/app/api/careers/route'
 
 export async function getCareers() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/careers`, {
+  const res = await fetch(`/api/careers`, {
     method: 'GET',
     cache: 'force-cache',
     next: {

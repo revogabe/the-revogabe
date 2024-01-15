@@ -4,9 +4,6 @@ import { CardCareer } from '@/components/card-career'
 import { CardProject } from '@/components/card.project'
 import { MapCard } from '@/components/map'
 import { RoadmapItem } from '@/components/roadmap-item'
-import { getCareers } from '@/queries/get-career'
-import { getProjects } from '@/queries/get-projects'
-import { getRoadmap } from '@/queries/get-roadmap'
 import { Avatar, AvatarFallback, AvatarImage } from '@/ui/avatar'
 import { Badge } from '@/ui/badge'
 import { Button } from '@/ui/button'
@@ -17,9 +14,127 @@ import { FaDiscord, FaGithub, FaLinkedin, FaTwitch } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
 export default async function Home() {
-  const careers = await getCareers()
-  const projects = await getProjects()
-  const roadmap = await getRoadmap()
+  const careers = [
+    {
+      id: 'comaqui',
+      name: 'Comaqui',
+      title: 'Software Engineer | Full-Stack',
+      description:
+        'Com a Comaqui estou tendo muitos desafios interessantes, como: Realtime, Experiência Mobile First, Geolocalização e muito mais. Sou um dos Fundadores por trás da Comaqui, uma plataforma pensada pra trazer tecnologia para os restaurantes Brasileiros e Globais. Faço parte do time que cuida da parte do Cliente, temos que pensar em features como delivery, QrCodes e muito mais.',
+      image:
+        'https://media.licdn.com/dms/image/D4D0BAQEK4Mz19P6jiw/company-logo_100_100/0/1696713344980/comaqui_logo?e=1713398400&v=beta&t=3wbY-3MQCkO8IW5rstGhM1xsm4Oq83uSHHPrZ97mSZo',
+      location: 'São Paulo, São Paulo, Brasil · Remota',
+      linkedin_url: 'https://www.linkedin.com/company/100715600/',
+      period: {
+        start: new Date('2023-06-12'),
+        end: 'in_moment',
+      },
+    },
+    {
+      id: 'muden',
+      name: 'Muden',
+      title: 'Pleno Software Engineer | Front-end',
+      description:
+        'Com minha promoção para Desenvolvedor Pleno, comecei a tomar mais responsabilidades de certos processos e a guiar como iriamos desenvolver novas features. Também revisava códigos de colegas oque me ajudou a conseguir um conhecimento ainda mais profundo e padrões de códigos.',
+      image:
+        'https://media.licdn.com/dms/image/C4D0BAQE2NP1MQpqWgA/company-logo_200_200/0/1643934045526/mudenoficial_logo?e=1713398400&v=beta&t=843Hq7RzZrgavCfCBdhE3Lxa8QbpCLVWoCRWACUJwOU',
+      location: 'São Paulo, São Paulo, Brasil · Remota',
+      linkedin_url: 'https://www.linkedin.com/company/mudenoficial/',
+      period: {
+        start: new Date('2022-01-24'),
+        end: new Date('2023-06-15'),
+      },
+    },
+    {
+      id: 'muden-2',
+      name: 'ExpressoTS',
+      title: 'Software Engineer | Front-end',
+      description:
+        'Participar do ExpressoTS foi uma jornada simplesmente fantástica e inspiradora! 💫 Como apaixonado por desenvolvimento web e entusiasta de tecnologias inovadoras, fazer parte desse framework para Node voltado para os princípios SOLID e clean architecture, com nuances inspiradas no incrível mundo .NET, foi uma oportunidade única.',
+      image:
+        'https://media.licdn.com/dms/image/D4D0BAQHwpR-dKkp6Ng/company-logo_100_100/0/1682544232002/expresso_ts_logo?e=1713398400&v=beta&t=ix5MjLMBgGFYQfWP7CYYpE3f9Hv1iYAnGIZWCFArr-0',
+      location: 'Vancouver, Colúmbia Britânica, Canadá · Remota',
+      linkedin_url: 'https://www.linkedin.com/company/mudenoficial/',
+      period: {
+        start: new Date('2022-06-03'),
+        end: new Date('2022-12-08'),
+      },
+    },
+  ]
+
+  const projects = [
+    {
+      id: 'translify',
+      name: 'Translify AI',
+      url: 'https://github.com/revogabe/translify-go',
+      icon: '/translify.png',
+      og_image: 'https://raw.githubusercontent.com/revogabe/translify-go/main/public/home.png',
+    },
+    {
+      id: 'comaqui',
+      name: 'Comaqui',
+      url: 'https://www.linkedin.com/company/100715600/',
+      icon: '/comaqui.png',
+      og_image:
+        'https://images.unsplash.com/photo-1646388286288-476b7329e2e0?q=100&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    },
+    {
+      id: 'jobsdev',
+      name: 'Jobsdev GO',
+      url: 'https://github.com/revogabe/go-jobsdev',
+      icon: '/jobsdev.png',
+      og_image: 'https://raw.githubusercontent.com/revogabe/go-jobsdev/main/public/home.png',
+    },
+    {
+      id: 'comakit',
+      name: 'Comakit',
+      url: 'https://github.com/revogabe/comakit',
+      icon: '/comakit.png',
+      og_image:
+        'https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?q=100&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    },
+  ]
+
+  const roadmap = [
+    {
+      id: 'rust',
+      title: 'Estudar Rust',
+      description:
+        'Recentemente eu tenho estudado Rust ocasionalmente, e estou gostando bastante da linguagem. Acredito que ela tem um potencial enorme, e que pode ser uma das linguagens mais usadas no uturo. Por isso, estou estudando ela para me preparar para o futuro e para o que está por vir.',
+      badges: ['Rust', 'Study'],
+    },
+    {
+      id: 'comakit',
+      title: 'Lançamento da Comakit',
+      description:
+        'A Comakit é uma lib ui que estou desenvolvendo com o intuito de ser um substituo ao ShadcnUI totalmente Open Source. Iremos lançar a primeira versão em breve, e estou muito animado para o lançamento dela. Acredito que ela será uma lib muito útil para a comunidade, e que irá ajudar muitos devs além de ser melhor que o Shadcn.',
+      badges: ['Comakit', 'Open Source', 'UI'],
+    },
+    {
+      id: 'yc-combinator',
+      title: 'Comaqui no Y-Combinator',
+      description:
+        'Estou bem confiante no trabalho que estamos fazendo na Comaqui e acredito que temos uma chance de entrar no Y-Combinator. Por isso, estou me preparando para aplicar a Comaqui no YC, sinto que isso pode ser um grande passo para a Comaqui e para mim como profissional.',
+      badges: ['Y-Combinator', 'Comaqui'],
+    },
+    {
+      id: 'youtube',
+      title: 'Iniciar canal no Youtube',
+      description:
+        'Estou bem empolgado nessa nova etapa da minha carreira e vida, em fevereiro vou estar iniciando meu canal no Youtube para compartilhar conhecimento e experiências. Acredito que isso vai me ajudar a crescer como profissional e como pessoa, e também sou apaixonado por ensinar e compartilhar conhecimento, sinto que nossa comunidade BR está carente de conteúdo explicativo e sobre stacks atuais do mercado e quero ajudar a mudar isso.',
+      badges: ['Hyperloop', 'Youtube'],
+    },
+    {
+      id: 'new-job',
+      title: 'Conseguir uma nova oportunidade',
+      description:
+        'Estou em busca de uma nova oportunidade de trabalho para me desafiar e crescer como profissional. Estou em busca de uma oportunidade. Estou bem confiante que vou conseguir uma nova posição em breve, e estou bem animado para isso.',
+      badges: ['New Job'],
+    },
+  ]
+  // const careers = await getCareers()
+  // const projects = await getProjects()
+  // const roadmap = await getRoadmap()
 
   return (
     <main className=" flex w-full max-2xl:mx-auto max-2xl:max-w-[900px] max-2xl:flex-col max-2xl:p-10 2xl:overflow-hidden">

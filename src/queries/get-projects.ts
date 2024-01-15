@@ -1,7 +1,7 @@
 import { Project } from '@/app/api/projects/route'
 
 export async function getProjects() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/projects`, {
+  const res = await fetch(`/api/projects`, {
     method: 'GET',
     cache: 'force-cache',
     next: {
