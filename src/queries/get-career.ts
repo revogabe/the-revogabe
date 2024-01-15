@@ -12,8 +12,8 @@ export async function getCareers() {
     },
   })
   const data = await response.json()
-  if (!data) {
+  if (!data.data) {
     throw new Error("Couldn't get careers")
   }
-  return data as Career[]
+  return data.data as Career[]
 }
