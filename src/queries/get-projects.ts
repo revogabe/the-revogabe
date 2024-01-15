@@ -4,6 +4,9 @@ export async function getProjects() {
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/projects`, {
     method: 'GET',
     cache: 'force-cache',
+    headers: {
+      'Content-Type': 'application/json',
+    },
     next: {
       tags: ['get-projects'],
     },
