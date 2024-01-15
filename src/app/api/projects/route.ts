@@ -44,5 +44,5 @@ const projects = [
 export async function GET() {
   const data = projects as Project[]
 
-  return NextResponse.json({ data })
+  return NextResponse.json(data)
 }
