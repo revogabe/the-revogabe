@@ -4,6 +4,7 @@ import { GeistSans } from 'geist/font/sans'
 
 import '../css/globals.css'
 
+import Image from 'next/image'
 import { ThemeProvider } from '@/providers/theme.provider'
 import { ToggleTheme } from '@/ui/toggle-theme'
 
@@ -18,11 +19,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-background">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
+          themes={['light', 'dark']}
           disableTransitionOnChange
         >
-          <ToggleTheme />
+          <Image
+            src="/background-wide.png"
+            alt=""
+            width={7800}
+            height={3080}
+            quality={100}
+            className="absolute inset-x-0 h-screen object-cover object-left opacity-50 brightness-150 invert max-2xl:hidden dark:opacity-25 dark:invert-0"
+          />
+
           {children}
         </ThemeProvider>
       </body>

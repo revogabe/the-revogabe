@@ -41,7 +41,7 @@ const careers = [
     location: 'São Paulo, São Paulo, Brasil · Remota',
     linkedin_url: 'https://www.linkedin.com/company/mudenoficial/',
     period: {
-      start: new Date('2023-02-24'),
+      start: new Date('2022-01-24'),
       end: new Date('2023-06-15'),
     },
   },

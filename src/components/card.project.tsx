@@ -8,9 +8,9 @@ import { SiOpenai } from 'react-icons/si'
 
 export const CardProject = (project: Project) => {
   return (
-    <a href={project.url} target="_blank" className="w-[400px] hover:no-underline">
+    <a href={project.url} target="_blank" className="w-full hover:no-underline 2xl:w-[400px]">
       <Card className="start-center flex h-full gap-5 p-4 duration-100 ease-in-out hover:opacity-75 max-lg:w-full">
-        <div className="start-center flex w-full flex-col gap-2">
+        <div className="start-center flex w-full flex-col gap-3">
           <Avatar className="h-11 w-11 rounded-xl border bg-white">
             <AvatarFallback>{project.name.charAt(0)}</AvatarFallback>
             <AvatarImage
@@ -19,7 +19,7 @@ export const CardProject = (project: Project) => {
             />
           </Avatar>
           <h6>{project.name}</h6>
-          <p className="leading-none">{project.url}</p>
+          <p className="mt-6 leading-none">{project.url}</p>
         </div>
         <div className="h-[140px] w-[440px] overflow-hidden rounded-lg border">
           <Image
