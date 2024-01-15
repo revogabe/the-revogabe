@@ -11,9 +11,9 @@ export async function getCareers() {
       tags: ['get-careers'],
     },
   })
-  const data = (await response.json()) as CareerResponse
-  if (!data.data) {
+  const data = (await response.json()) as Career[]
+  if (!data) {
     throw new Error("Couldn't get careers")
   }
-  return data.data
+  return data
 }

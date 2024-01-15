@@ -11,9 +11,9 @@ export async function getProjects() {
       tags: ['get-projects'],
     },
   })
-  const data = await response.json()
+  const data = (await response.json()) as Project[]
   if (!data) {
     throw new Error("Couldn't get projects")
   }
-  return data as Project[]
+  return data
 }
