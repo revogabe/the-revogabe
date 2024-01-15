@@ -56,9 +56,7 @@ export default async function Home() {
             <div className="center-start my-2.5 flex gap-3">
               💼 <h4>Carreira</h4>
             </div>
-            {careers.map((career) => (
-              <CardCareer key={career.id} {...career} />
-            ))}
+            {careers && careers.map((career) => <CardCareer key={career.id} {...career} />)}
           </div>
         </div>
       </div>
@@ -202,9 +200,7 @@ export default async function Home() {
           <div className="start flex w-full max-w-[840px] flex-col gap-8">
             <h4>🗒️ Projects</h4>
             <div className="grid w-max grid-cols-2 gap-8">
-              {projects.map((project) => (
-                <CardProject key={project.id} {...project} />
-              ))}
+              {projects && projects.map((project) => <CardProject key={project.id} {...project} />)}
             </div>
           </div>
 
@@ -212,9 +208,7 @@ export default async function Home() {
           <div className="start flex w-full max-w-[840px] flex-col gap-8">
             <h4>🗓️ Roadmap 2024</h4>
             <div className="flex w-full flex-col gap-8">
-              {roadmap.map((item) => (
-                <RoadmapItem key={item.id} {...item} />
-              ))}
+              {roadmap && roadmap.map((item) => <RoadmapItem key={item.id} {...item} />)}
             </div>
           </div>
 
@@ -457,9 +451,7 @@ export default async function Home() {
         <div className="start flex w-full flex-col gap-8">
           <h4>🗒️ Projects</h4>
           <div className="flex w-full flex-col gap-8">
-            {projects.map((project) => (
-              <CardProject key={project.id} {...project} />
-            ))}
+            {projects && projects.map((project) => <CardProject key={project.id} {...project} />)}
           </div>
         </div>
 
@@ -467,9 +459,7 @@ export default async function Home() {
         <div className="start flex w-full flex-col gap-8">
           <h4>🗓️ Roadmap 2024</h4>
           <div className="flex w-full flex-col gap-8">
-            {roadmap.map((item) => (
-              <RoadmapItem key={item.id} {...item} />
-            ))}
+            {roadmap && roadmap.map((item) => <RoadmapItem key={item.id} {...item} />)}
           </div>
         </div>
 
