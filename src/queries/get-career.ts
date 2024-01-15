@@ -1,4 +1,4 @@
-import { Career } from '@/app/api/careers/route'
+import { Career, CareerResponse } from '@/app/api/careers/route'
 
 export async function getCareers() {
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/careers`, {
@@ -11,9 +11,9 @@ export async function getCareers() {
       tags: ['get-careers'],
     },
   })
-  const data = await response.json()
+  const data = (await response.json()) as CareerResponse
   if (!data.data) {
     throw new Error("Couldn't get careers")
   }
-  return data.data as Career[]
+  return data.data
 }

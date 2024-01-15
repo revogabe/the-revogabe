@@ -14,6 +14,10 @@ export type Career = {
   }
 }
 
+export type CareerResponse = {
+  data: Career[]
+}
+
 const careers = [
   {
     id: 'comaqui',
