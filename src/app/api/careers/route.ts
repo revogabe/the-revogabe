@@ -65,5 +65,5 @@ const careers = [
 export async function GET() {
   const data = careers
 
-  return NextResponse.json({ data })
+  return NextResponse.json(data)
 }
