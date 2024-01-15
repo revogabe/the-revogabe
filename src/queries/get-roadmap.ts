@@ -11,6 +11,6 @@ export async function getRoadmap() {
       tags: ['get-roadmap'],
     },
   })
-  const data = await response.json()
-  return data as Roadmap[]
+  const data = (await response.json()) as Roadmap[]
+  return data
 }
