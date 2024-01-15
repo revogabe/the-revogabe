@@ -137,7 +137,7 @@ export default async function Home() {
   // const roadmap = await getRoadmap()
 
   return (
-    <main className=" flex w-full max-2xl:mx-auto max-2xl:max-w-[900px] max-2xl:flex-col max-2xl:p-10 2xl:overflow-hidden">
+    <main className="flex w-full max-2xl:mx-auto max-2xl:max-w-[900px] max-2xl:flex-col max-2xl:p-10 2xl:overflow-hidden">
       <div className="z-10 flex h-screen w-full flex-col gap-8 max-2xl:mx-auto 2xl:max-w-[640px] 2xl:p-16">
         <div className="start-center flex w-full flex-col gap-3">
           <Avatar className="border-border mb-6 size-24 rounded-xl border">
