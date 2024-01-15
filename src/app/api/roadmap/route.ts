@@ -46,7 +46,7 @@ const roadmaps = [
 ] as Roadmap[]
 
 export async function GET() {
-  const data = roadmaps as Roadmap[]
+  const data = roadmaps
 
   return NextResponse.json(data)
 }

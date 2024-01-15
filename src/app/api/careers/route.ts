@@ -67,7 +67,7 @@ const careers = [
 ] as Career[]
 
 export async function GET() {
-  const data = careers as Career[]
+  const data = careers
 
   return NextResponse.json(data)
 }

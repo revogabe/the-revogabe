@@ -42,7 +42,7 @@ const projects = [
 ] as Project[]
 
 export async function GET() {
-  const data = projects as Project[]
+  const data = projects
 
   return NextResponse.json(data)
 }

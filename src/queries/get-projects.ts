@@ -3,6 +3,7 @@ import { Project } from '@/app/api/projects/route'
 export async function getProjects() {
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/projects`, {
     method: 'GET',
+    cache: 'force-cache',
     next: {
       tags: ['get-projects'],
     },
@@ -11,6 +12,5 @@ export async function getProjects() {
   if (!data) {
     throw new Error("Couldn't get projects")
   }
-  console.log(data)
   return data
 }
