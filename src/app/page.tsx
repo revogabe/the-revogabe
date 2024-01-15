@@ -16,8 +16,6 @@ import { ToggleTheme } from '@/ui/toggle-theme'
 import { FaDiscord, FaGithub, FaLinkedin, FaTwitch } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
-import { Career } from './api/careers/route'
-
 export default async function Home() {
   const careers = await getCareers()
   const projects = await getProjects()
