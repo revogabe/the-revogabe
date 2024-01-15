@@ -11,5 +11,6 @@ export async function getProjects() {
   if (!data) {
     throw new Error("Couldn't get projects")
   }
+  console.log(data)
   return data
 }
