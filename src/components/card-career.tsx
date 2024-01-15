@@ -31,7 +31,7 @@ export const CardCareer = (career: Career) => {
               <p>
                 {`${format(career.period.start.toString(), 'PP')}  -  ${
                   career.period.end === 'in_moment'
-                    ? 'At the moment'
+                    ? 'Atualmente'
                     : format(career.period.end.toString(), 'PP')
                 }`}
               </p>

@@ -42,11 +42,12 @@ export default async function Home() {
           <h1>Daniel Gabriel</h1>
           <p className="w-[400px]">
             <span className="text-primary mb-1">
-              Founder of <Link href="/comaqui">@Comaqui</Link>,{' '}
+              Fundador da <Link href="/comaqui">@Comaqui</Link>,{' '}
               <Link href="/comakit">@Comakit</Link> e <Link href="/hyperloop">@Hyperloop</Link>
             </span>
-            <br />I became a developer because I love solving real problems and I&apos;ve been
-            creating for 2 years products that can contribute to the world in some way.
+            <br />
+            Sou desenvolvedor porque amo resolver problemas reais e há 2 anos venho criando produtos
+            que podem contribuir com o mundo de alguma forma.
           </p>
         </div>
 
@@ -114,7 +115,7 @@ export default async function Home() {
                   >
                     <FaGithub size={24} className="text-white" />
                   </Button>
-                  <h6>Check out my Github 🖥️</h6>
+                  <h6>Confirá meu Github 🖥️</h6>
                 </Card>
               </a>
 
@@ -127,7 +128,7 @@ export default async function Home() {
                   >
                     <FaLinkedin size={24} className="text-white" />
                   </Button>
-                  <h6>Let&apos;s connect on Linkedin 🤝🏼</h6>
+                  <h6>Connecte comigo no Linkedin 🤝🏼</h6>
                 </Card>
               </a>
               <a href="https://discord.gg/hHaeCntW8Q" target="_blank">
@@ -139,7 +140,7 @@ export default async function Home() {
                   >
                     <FaDiscord size={24} className="text-white" />
                   </Button>
-                  <h6>Join our community 🌐</h6>
+                  <h6>Entre em nossa comunidade 🌐</h6>
                 </Card>
               </a>
 
@@ -152,7 +153,7 @@ export default async function Home() {
                   >
                     <FaXTwitter size={24} className="text-white" />
                   </Button>
-                  <h6>Follow me on X</h6>
+                  <h6>Me siga no X</h6>
 
                   <Button variant="outline" size="sm" className="gap-2.5   rounded-sm">
                     Follow
@@ -173,10 +174,10 @@ export default async function Home() {
                       <FaTwitch size={24} className="text-white" />
                     </Button>
                     <div>
-                      <h5>Keep an eye on my Twitch channel</h5>
+                      <h5>Fique de olho no meu canal da Twitch</h5>
                       <p className="mt-2 leading-6">
-                        Here I do live code with chat, always trying to help people who, like me,
-                        are passionate about technology.
+                        Aqui eu faço live code com chat, sempre tentando ajudar pessoas que, assim
+                        como eu, são apaixonadas por tecnologia.
                       </p>
                     </div>
                   </div>
@@ -275,10 +276,10 @@ export default async function Home() {
                   </h6>
                   <ul className="flex flex-col gap-2">
                     <li>
-                      <span className="text-primary">🗽</span> Living in NYC
+                      <span className="text-primary">🗽</span> Viver em NYC
                     </li>
                     <li>
-                      <span className="text-primary">👨‍💻</span> Working at FAANG
+                      <span className="text-primary">👨‍💻</span> Entrar em uma FAANG
                     </li>
                   </ul>
                 </Card>
@@ -369,7 +370,7 @@ export default async function Home() {
               >
                 <FaGithub size={18} className="text-white" />
               </Button>
-              <h6>Check out my Github 🖥️</h6>
+              <h6>Confirá meu Github 🖥️</h6>
             </Card>
           </a>
           <a
@@ -385,7 +386,7 @@ export default async function Home() {
               >
                 <FaLinkedin size={18} className="text-white" />
               </Button>
-              <h6>Let&apos;s connect on Linkedin 🤝🏼</h6>
+              <h6>Connecte comigo no Linkedin 🤝🏼</h6>
             </Card>
           </a>
           <a href="https://discord.gg/hHaeCntW8Q" target="_blank">
@@ -397,7 +398,7 @@ export default async function Home() {
               >
                 <FaDiscord size={18} className="text-white" />
               </Button>
-              <h6>Join our community 🌐</h6>
+              <h6>Entre em nossa comunidade 🌐</h6>
             </Card>
           </a>
           <a href="https://twitter.com/orevogabe" target="_blank">
@@ -409,7 +410,7 @@ export default async function Home() {
               >
                 <FaXTwitter size={18} className="text-white" />
               </Button>
-              <h6>Follow me on X</h6>
+              <h6>Me siga no X</h6>
             </Card>
           </a>
           <Card className="start-between flex h-full w-full gap-8 p-6">
@@ -515,10 +516,10 @@ export default async function Home() {
               </h6>
               <ul className="flex flex-col gap-2">
                 <li>
-                  <span className="text-primary">🗽</span> Living in NYC
+                  <span className="text-primary">🗽</span> Viver em NYC
                 </li>
                 <li>
-                  <span className="text-primary">👨‍💻</span> Working at FAANG
+                  <span className="text-primary">👨‍💻</span> Entrar em uma FAANG
                 </li>
               </ul>
             </Card>
