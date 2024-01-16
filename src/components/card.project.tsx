@@ -12,13 +12,6 @@ export const CardProject = (project: Project) => {
     <a href={project.url} target="_blank" className="group w-full hover:no-underline 2xl:w-[400px]">
       <Card className="start-center flex h-full gap-5 p-4 duration-100 ease-in-out hover:opacity-75 max-lg:w-full">
         <div className="start-center flex w-full flex-col gap-3">
-          {/* <Avatar className="bg-secondary h-11 w-11 rounded-xl border">
-            <AvatarFallback>{project.name.charAt(0)}</AvatarFallback>
-            <AvatarImage
-              src={project.icon}
-              alt={`Icone do projeto ${project.name} criado por Revogabe / Daniel Gabriel`}
-            />
-          </Avatar> */}
           <Image
             width={1500}
             height={1500}
