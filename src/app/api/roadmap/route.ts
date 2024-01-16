@@ -20,7 +20,7 @@ export async function GET() {
       id: 'comakit',
       title: 'Lançamento da Comakit',
       description:
-        'A Comakit é uma lib ui que estou desenvolvendo com o intuito de ser um substituo ao ShadcnUI totalmente Open Source. Iremos lançar a primeira versão em breve, e estou muito animado para o lançamento dela. Acredito que ela será uma lib muito útil para a comunidade, e que irá ajudar muitos devs além de ser melhor que o Shadcn.',
+        'A Comakit é uma lib ui que estou desenvolvendo com o intuito de ser um substituto ao ShadcnUI totalmente Open Source. Iremos lançar a primeira versão em breve, e estou muito animado para o lançamento dela. Acredito que ela será uma lib muito útil para a comunidade, e que irá ajudar muitos devs além de ser melhor que o Shadcn.',
       badges: ['Comakit', 'Open Source', 'UI'],
     },
     {
