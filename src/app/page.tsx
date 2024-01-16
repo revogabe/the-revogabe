@@ -113,7 +113,7 @@ export default async function Home() {
                   >
                     <FaGithub size={24} className="text-white" />
                   </Button>
-                  <h6>Confirá meu Github 🖥️</h6>
+                  <h6>Confira meu Github 🖥️</h6>
                 </Card>
               </a>
 
@@ -126,7 +126,7 @@ export default async function Home() {
                   >
                     <FaLinkedin size={24} className="text-white" />
                   </Button>
-                  <h6>Connecte comigo no Linkedin 🤝🏼</h6>
+                  <h6>Conecte comigo no Linkedin 🤝🏼</h6>
                 </Card>
               </a>
               <a href="https://discord.gg/hHaeCntW8Q" target="_blank">
@@ -174,8 +174,8 @@ export default async function Home() {
                     <div>
                       <h5>Fique de olho no meu canal da Twitch</h5>
                       <p className="mt-2 leading-6">
-                        Aqui eu faço live code com chat, sempre tentando ajudar pessoas que, assim
-                        como eu, são apaixonadas por tecnologia.
+                        Aqui eu faço &ldquo;live coding&ldquo; com o chat, sempre tentando ajudar
+                        pessoas que assim como eu, são apaixonadas por tecnologia.
                       </p>
                     </div>
                   </div>
@@ -364,7 +364,7 @@ export default async function Home() {
               >
                 <FaGithub size={18} className="text-white" />
               </Button>
-              <h6>Confirá meu Github 🖥️</h6>
+              <h6>Confira meu Github 🖥️</h6>
             </Card>
           </a>
           <a
@@ -380,7 +380,7 @@ export default async function Home() {
               >
                 <FaLinkedin size={18} className="text-white" />
               </Button>
-              <h6>Connecte comigo no Linkedin 🤝🏼</h6>
+              <h6>Conecte comigo no Linkedin 🤝🏼</h6>
             </Card>
           </a>
           <a href="https://discord.gg/hHaeCntW8Q" target="_blank">
@@ -423,10 +423,10 @@ export default async function Home() {
                     <FaTwitch size={24} className="text-white" />
                   </Button>
                   <div>
-                    <h5>Keep an eye on my Twitch channel</h5>
+                    <h5>Fique de olho no meu canal da Twitch</h5>
                     <p className="mt-2 leading-6">
-                      Here I do live code with chat, always trying to help people who, like me, are
-                      passionate about technology.
+                      Aqui eu faço &ldquo;live coding&ldquo; com o chat, sempre tentando ajudar
+                      pessoas que assim como eu, são apaixonadas por tecnologia.
                     </p>
                   </div>
                 </div>
