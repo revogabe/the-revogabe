@@ -10,7 +10,7 @@ import { ToggleTheme } from '@/ui/toggle-theme'
 
 export const metadata: Metadata = {
   title: 'The Revogabe',
-  description: "Flowers are red, violets are blue, I'm a schizophrenic, and so am I.",
+  description: "Hello, my name is Daniel. I'm a Software Engineer, based in São Paulo, Brazil.",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
